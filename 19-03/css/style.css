@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.navegacao__menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navegacao__menu li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+.navegacao__logo {
+    width: 200px;
+}
+
+.conteudo {
+
+}
+
+.conteudo__container {
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.conteudo__foto {
+    width: 150px;
+
+}
+
+.conteudo__artigo {
+    width: 500px;
+
+}
+
+.conteudo__nome {
+    font-weight: bold;
+}
