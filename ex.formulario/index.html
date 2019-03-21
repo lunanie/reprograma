@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt--br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Turma 7</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <form action="#" method="POST" class="formulario">
+    <div class="campo">
+        <label for="texto">Texto</label>
+        <input type="text" placeholder="Digite um texto" name="texto">
+    </div> 
+    <div class="campo">
+        <label for="senha">Senha</label>
+        <input type="password" placeholder="Digite uma senha" name="senha">
+    </div> 
+    <div class="campo">
+        <label for="confirmação">Confirme aqui que você é uma mulher cheia de talentos</label>
+        <input type="checkbox" name="confirmo-talentos" value="confirmo-que-sou-mesmo"><span>Confirmo que sou mesmo</span>
+    </div> 
+    <div class="campo">
+        <label for="escolha-uma-opcao">Escolha uma Opção</label>
+        <div class="opcoes">
+        <input type="radio" name="escolha" value="super-forca"><span>Super Força</span>
+        <input type="radio" name="escolha" value="ser-invisivel"><span>Ser Invisível</span>
+        <input type="radio" name="escolha" value="ler-mentes"><span>Ler Mentes</span>
+        <input type="radio" name="escolha" value="super-velocidade"><span>Super Velocidade</span>
+        </div>
+    </div>
+
+    <div class="campo">
+        <label for="selecione-um-topico">Selecione um tópico</label> 
+        <select name="selecione-um-topico">
+            <option value="deixar-meu-site-mais-bonito">Deixar meu site mais bonito</option>
+            <option value="acabar-com-o-patriarcado">Acabar com o patriarcado</option>            
+            <option value="fazer-a-revolucao-feminista">Fazer a revolução feminista</option>            
+        </select>
+    </div>
+    <div class="campo">
+        <label for="valor">Escolha um Valor</label>
+        <input type="number" placeholder="escolha-um-valor" name="valor">
+    </div>
+    <div class="campo">
+        <label for="comentario">Comentário</label>
+        <textarea name="comentario" rows="3" placeholder="Digite um comentário aqui"></textarea>
+    </div>
+    <div class="campo">
+        <input type="submit" value="Reset" class="btn--cinza">
+        <input type="submit" value="Submit"class="btn--roxo">
+    </div>
+    </form>
+   
+</body>
+</html>

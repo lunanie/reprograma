@@ -1,0 +1,36 @@
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formulario{
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+
+}
+.campo{
+    display: flex;
+    justify-content: space-between;
+}
+.opcoes{
+    width: 50%;
+}
+.campo > label{
+    width: 50%;
+    text-align: right;
+}
+ .btn--cinza{
+     padding: 10px 20px 10px 20px;
+     border-radius: 10px;
+     border: none;
+     background-color: lightgrey
+ }
+
+ .btn--roxo{
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(236, 54, 206, 0.637);
+    color: white;
+}

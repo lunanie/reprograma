@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Preencha aqui</h1>
+    <section class="formulario">
+        <form action="sucesso.html" method="GET">
+
+            <div>
+                <label for="nome-da-pessoa">Nome</label>
+                <input type="text" placeholder="Digite seu nome aqui" name="nome-da-pessoa">
+            </div>
+
+            <div>
+                <label for="senha-da-pessoa">Senha</label>
+                <input type="password" placeholder="Digite sua senha" name="senha-da-pessoa">
+            </div>
+
+            <div>
+                <label>E-mail</label>
+                <input type="email" placeholder="Digite seu e-mail">
+            </div>
+            
+            <div>
+                <label for="idade">RG</label>
+                <input type="number" placeholder="Digite sua idade" name="idade">
+            </div>
+            <div>
+                <label for="interesse">Declaro que sou muito talentosa</label>
+                <input type="checkbox" name="interesse" value="tecnologia"><span>Tecnologia</span>
+                <input type="checkbox" name="interesse" value="tecnologia"><span>Arquiteta</span>
+                <input type="checkbox" name="interesse" value="tecnologia"><span>Literatura</span>
+            </div>
+
+            <div>
+                <label>Selecione sua profissão</label>
+                <input type="radio" name="profissao"   value="programadora"> Programadora
+                <input type="radio" name="profissao" value="designer"> Designer
+                <input type="radio" name="profissao" value="arquiteta"> Arquiteta
+            </div>
+            <div>   
+                <label for="cidade-da-pessoa">Sua cidade:</label>
+                <select name="cidade-da-pessoa">
+                        <option value="sao-paulo">São Paulo</option>
+                        <option value="rio-de-janeiro">Rio de Janeiro</option>
+                        <option value="belo-horizonte">Belo Horizonte</option>
+                        <option value="ribeirao-pires">Ribeirão Pires</option>
+                        <option value="paris">Paris</option>
+                        <option value="new-york">New York</option>
+
+                </select>
+            </div>
+
+            <div>
+                <label>Conte sua vida</label>
+                <textarea name="vida" rows="3"  placeholder="Conte sua vida aqui bebê"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </section>
+
+    
+</body>
+</html>

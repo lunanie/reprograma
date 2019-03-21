@@ -1,137 +1,103 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício Coding Dojo</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navegacao">
+        <a href="index.html" class="brand">
+            <img src="./img/logo.svg" alt="Logo Top Hat" class="logo">
+        </a>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Suando frio</title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
+        <ul class="menu">
+            <li class="menu__item"><a href="#">Produtos</a></li>
+            <li class="menu__item"><a href="#">Autoria</a></li>
+            <li class="menu__item"><a href="#">Preços</a></li>
+            <li class="menu__item"><a href="#">Teaching Resources</a></li>
+            <li class="menu__item"><a href="#">Blog</a></li>
+            <li class="menu__item">
+                <a href="#">
+                    <img src="./img/search.png" alt="Buscar" class="busca">
+                </a>
+            </li>
+        </ul>
 
-    </head>
+        <ul class="area-usuario">
+            <li class="area-usuario__item"><a href="#">Assine</a></li>
+            <li class="area-usuario__item"><a href="#">Login</a></li>
+            <button class="area-usuario__item btn btn--roxo">Solicite uma Demo</button>
+        </ul>
+    </nav>
 
-    <body class="corposensual">
-
-        <nav class="navegacao">
-            <img src="./img/logo.svg" alt="Logo Top Hat" class="navegacao__tophat">
-            <ul class="navegacao__menu">
-                <li class="navegacao__link">Produtos</li>
-                <li  class="navegacao__link">Autoria</li>
-                <li  class="navegacao__link">Preços</li>
-                <li  class="navegacao__link">Recursos de Localização</li>
-                <li  class="navegacao__link">Blog</li>
-                <li><img class="busca"
-                src="./img/search.png" alt="Busca"></li>
-            </ul>
-
-            <ul class="navegacao__menu2">
-                <li class="navegacao__link2">Assine </li>
-                <li class="navegacao__link2">Login</li>
-                <li class="navegacao__link2--btn"><button>Solicite uma demo</button></li>
-
-            </ul>
-        </nav>
-        <section class="sessao1">
-            <div class="textos__portugues">
-                <h1>Título em portugués e chamativo</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident dolor architecto assumenda. Soluta facere veniam quam dolor alias ut aspernatur consequatur commodi itaque tempora. Placeat necessitatibus itaque molestiae ea odio.
-                </p>
-                <button>Solicite uma demo</button>
-                <button>Assista o vídeo</button>
-                <img src="./img/play-button.png">
-                            
-
+    <header class="cabecalho">
+        <div class="info">
+            <h1 class="titulo">Reprograma Turma 7</h1>
+            <p>Top Hat Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde tempore recusandae ducimus itaque accusamus.</p>
+            <div class="cal-to-action">
+                <button class="btn btn--rosa">Solicite uma Demo</button>
+                <a href="#" class="link">
+                    Assista o vídeo
+                    <img class="link__inline-icon" src="./img/play-button.png" alt="Assistir ao vídeo">
+                </a>
             </div>
-
-
-            <div>
-                <img src="./img/header.png" class="foto__video">
-            </div>
-
-        </section>
-
-        <section class="sessao2">
-
-            <h3> "Faça parte de uma comunidade de 16 mil estudantes ao redor do mundo."
-            </h3>
-
-        </section>
-
-        <section class="sessao3">
-
-            <div>
-                <h3>Universidade da Lovelace</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos porro delectus odio eum beatae ab aperiam quos. Natus odio ducimus, modi doloribus quaerat, deserunt non suscipit necessitatibus nam labore voluptas.
-                    <span>
-                     Aluna Linda Reprograma
-                   
-                    </span>
-
-                    <span>
-                        Engenheira da Nasa
-                    </span>
-                    
-                </p>
-
-
-            </div>
-
-
-            <div>
-                    <h3>Universidade da Lovelace</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos porro delectus odio eum beatae ab aperiam quos. Natus odio ducimus, modi doloribus quaerat, deserunt non suscipit necessitatibus nam labore voluptas.
-                        <span>
-                         Aluna Linda Reprograma
-                       
-                        </span>
+        </div>
+        <img src="./img/header.png" alt="">
+    </header>
     
-                        <span>
-                            Engenheira da Nasa
-                        </span>
-                        
-                    </p>
+    <section class="universidades">
+        <h2 class="chamada">Faça parte de uma comunidade de <span>16.000</span> estudantes ao redor do mundo</h2>
 
+        <div class="colecao-depoimentos">
+            <div class="depoimento">
+                <h4 class="depoimento__universidade">Universidade Lovelace</h4>
+                <blockquote class="depoimento__trecho">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusamus porro vero sint, architecto veniam odit saepe, provident eveniet deleniti.
+                </blockquote>
+                <div>
+                    <p class="depoimento__creditos">Aluna Reprograma</p>
+                    <p class="depoimento__legenda">Engenheira da Nasa</p>
+                </div>
+            </div>
+            <div class="depoimento">
+                <h4 class="depoimento__universidade">Universidade Lovelace</h4>
+                <blockquote class="depoimento__trecho">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusamus porro vero sint, architecto veniam odit saepe, provident eveniet deleniti.
+                </blockquote>
+                <div>
+                    <p class="depoimento__creditos">Aluna Reprograma</p>
+                    <p class="depoimento__legenda">Engenheira da Nasa</p>
+                </div>
+            </div>
+            <div class="depoimento">
+                <h4 class="depoimento__universidade">Universidade Lovelace</h4>
+                <blockquote class="depoimento__trecho">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusamus porro vero sint, architecto veniam odit saepe, provident eveniet deleniti.
+                </blockquote>
+                <div>
+                    <p class="depoimento__creditos">Aluna Reprograma</p>
+                    <p class="depoimento__legenda">Engenheira da Nasa</p>
+                </div>
             </div>
 
-            <div>
-                    <h3>Universidade da Lovelace</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos porro delectus odio eum beatae ab aperiam quos. Natus odio ducimus, modi doloribus quaerat, deserunt non suscipit necessitatibus nam labore voluptas.
-                        <span>
-                         Aluna Linda Reprograma
-                       
-                        </span>
-    
-                        <span>
-                            Engenheira da Nasa
-                        </span>
-                        
-                    </p>
-
+            <div class="depoimento">
+                <h4 class="depoimento__universidade">Universidade Lovelace</h4>
+                <blockquote class="depoimento__trecho">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusamus porro vero sint, architecto veniam odit saepe, provident eveniet deleniti.
+                </blockquote>
+                <div>
+                    <p class="depoimento__creditos">Aluna Reprograma</p>
+                    <p class="depoimento__legenda">Engenheira da Nasa</p>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div>
-                    <h3>Universidade da Lovelace</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos porro delectus odio eum beatae ab aperiam quos. Natus odio ducimus, modi doloribus quaerat, deserunt non suscipit necessitatibus nam labore voluptas.
-                        <span>
-                         Aluna Linda Reprograma
-                       
-                        </span>
-    
-                        <span>
-                            Engenheira da Nasa
-                        </span>
-                        
-                    </p>
-
-            </div>
-
-
-        </section>
-
-        <footer class="rodape">
-            <p> Desenvolvido por Luciane e Gabriela </p>
-           
-        </footer>
-    </body>
-
+    <footer class="rodape">
+        <p class="creditos-rodape">Desenvolvido por Luciane Cristina Nagay Martins</p>
+    </footer>
+</body>
 </html>
