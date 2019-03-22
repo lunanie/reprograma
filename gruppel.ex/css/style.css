@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+.cabecalho{
+    background-image: url('../img/bg-banner.png');
+    background-position: center center;
+    min-height: 80vh;
+}
+
+
+
+li{
+    display: inline-block;
+
+
+nav{
+    position: fixed;
+    top:0;
+    widows: 100%;
+
+}

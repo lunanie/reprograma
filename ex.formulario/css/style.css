@@ -33,4 +33,13 @@ body{
     border: none;
     background-color: rgba(236, 54, 206, 0.637);
     color: white;
+
+}
+
+.btn--roxo:hover {
+    background-color: blueviolet;
+}
+
+input:focus {
+    border: 2px solid blueviolet;
 }
