@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.15);
+    background-color: rgba(163, 51, 157, 0.247);
+}
+.navegacao__menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+@media (max-width: 768px) {
+    .navegacao__menu {
+        display: none;
+    }
+  }
+.menu__link{
+    text-decoration: none;
+    color: #5d1277;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu__link:hover{
+    color:rgb(197, 26, 154);
+}
+.navegacao__menu li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+
+}
+.navegacao__logo {
+    height: 20px;
+}
+.conteudo {
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .conteudo {
+        display: center;
+    }
+  }
+.conteudo__container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;  
+}
+
+@media (max-width: 768px) {
+    .conteudo__container {
+        flex-wrap: wrap;
+    }
+  }
+
+
+.conteudo__foto {
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.conteudo__artigo {
+    max-width: 50%;
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    .conteudo__artigo {
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    }
+  }
+
+.conteudo__nome {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
+
+}
+.conteudo__autora {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+@media (max-width: 768px)  {
+    .conteudo__autora {
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    }
+  }
+
+.conteudo__autora p {
+   text-align: center;
+}
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a9a9a9;
+    height: 25px;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}
+
+.navegacao__logo--pequeno{
+    height: 15px;
+    margin: 0 20px;
+}
