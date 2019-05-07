@@ -1,0 +1,25 @@
+.nav_style{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+.footerzao{
+    background-image: url("./04-thumbnail.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    /* background-color: red!important; */
+}
+.padding_style{
+    /* padding: 90px; */
+    margin: 100px;
+}
+/* 
+.jumbotrom_style{
+    margin-bottom:300px;
+} */
+
+/* .banner_style{
+    margin-top: -56px;
+} */
