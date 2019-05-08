@@ -1,0 +1,13 @@
+nav.navbar .botaoX {
+  padding: 10px 20px;
+  background: #ffffff;
+  text-transform: capitalize;
+  color: #cccccc;
+}
+
+nav.navbar h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #5da09c;
+}
+/*# sourceMappingURL=style.css.map */
