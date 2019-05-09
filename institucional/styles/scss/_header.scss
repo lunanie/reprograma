@@ -1,8 +1,33 @@
-nav.navbar{
-    .botaoX{
-        @include button(10px, 20px, $color-secondary, #cccccc);
+.header {
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .container {
+    @include flex(center, space-between);
+  }
+  h1 {
+    margin: 0 0 0 10px;
+    font-size: 20px;
+    width: 87 px;
+    color: $color-secondary;
+  }
+  .navbar-right {
+    @include flex(center, center);
+    li + li {
+      margin-left: 30px;
     }
-    h1{
-        @include title(uppercase, $color-primary);
+    li a {
+      color: $color-secondary;
     }
+  }
+  .logo-container {
+    @include flex(flex-start, center);
+
+    img {
+      width: 60px;
+    }
+  }
 }

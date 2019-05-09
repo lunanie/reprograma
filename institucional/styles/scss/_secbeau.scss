@@ -1,0 +1,23 @@
+.secbeau {
+  .container {
+    .beautiful {
+      display: flex;
+
+      .beautiful__texto {
+        max-width: 50%;
+        h4 {
+          font-size: $font-size-title;
+          text-transform: uppercase;
+          padding: 0 40px;
+        }
+        p {
+          padding: 0 40px;
+          font-size: $font-size-text;
+        }
+      }
+      .beautiful__foto {
+        max-width: 50%;
+      }
+    }
+  }
+}

@@ -1,13 +1,253 @@
-nav.navbar .botaoX {
-  padding: 10px 20px;
-  background: #ffffff;
-  text-transform: capitalize;
-  color: #cccccc;
+body {
+  margin: 0;
+  font-family: "Open-sans", sans-serif;
 }
 
-nav.navbar h1 {
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: "Open-sans", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.section-title {
   font-size: 24px;
   text-transform: uppercase;
-  color: #5da09c;
+  color: #000000;
+  margin-top: 0;
+}
+
+div[class^="section-"] {
+  padding: 40px 0;
+}
+
+.header {
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header h1 {
+  margin: 0 0 0 10px;
+  font-size: 20px;
+  width: 87 px;
+  color: #ffffff;
+}
+
+.header .navbar-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .navbar-right li + li {
+  margin-left: 30px;
+}
+
+.header .navbar-right li a {
+  color: #ffffff;
+}
+
+.header .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .logo-container img {
+  width: 60px;
+}
+
+.banner {
+  background-image: url("../images/bg3.jpg");
+  background-size: cover;
+  height: 85vh;
+}
+
+.banner .banner-content {
+  height: 85vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .banner-content .banner-text {
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+.banner .banner-content h2 {
+  font-size: 24px;
+  text-transform: unset;
+  color: #ffffff;
+}
+
+.banner .banner-content h5 {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.banner .banner-content .btn-fill {
+  padding: 10px 20px;
+  background: #1b7990;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.banner .banner-content .btn-simple {
+  padding: 10px 20px;
+  background: transparent;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.banner .parallax-image {
+  text-align: center;
+  width: 100%;
+}
+
+.banner .parallax-image img {
+  height: 570px;
+  margin-bottom: -140px;
+}
+
+.banner .banner-img {
+  width: 50%;
+}
+
+.clientes {
+  background: lightgray;
+}
+
+.clientes .container {
+  padding: 40px;
+}
+
+.clientes h4 {
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: gray;
+}
+
+.clientes p {
+  font-size: 16px;
+  text-align: center;
+  padding: 40px;
+  color: gray;
+}
+
+.clientes .lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.secbeau .container .beautiful {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.secbeau .container .beautiful .beautiful__texto {
+  max-width: 50%;
+}
+
+.secbeau .container .beautiful .beautiful__texto h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 0 40px;
+}
+
+.secbeau .container .beautiful .beautiful__texto p {
+  padding: 0 40px;
+  font-size: 16px;
+}
+
+.secbeau .container .beautiful .beautiful__foto {
+  max-width: 50%;
+}
+
+.features .fearow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .container .mapadosite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0, 20px;
+}
+
+.footer .container .social-area {
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

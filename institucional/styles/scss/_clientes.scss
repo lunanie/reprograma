@@ -1,0 +1,23 @@
+.clientes {
+  background: lightgray;
+  .container {
+    padding: 40px;
+  }
+  h4 {
+    font-size: $font-size-title;
+    text-align: center;
+    text-transform: uppercase;
+    color: lighten($color-primary, 50%);
+  }
+  p {
+    font-size: $font-size-text;
+    text-align: center;
+    padding: 40px;
+    color: lighten($color-primary, 50%);
+  }
+
+  .lista {
+    display: flex;
+    justify-content: space-around;
+  }
+}
