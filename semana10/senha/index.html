@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>jQuery - Reprograma</title>
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
-    <input type="password" name="senha" id="senha" />
-    <br>
-    <br>
-    <div id="forca">Força: </div>
+  <body>
+    <input type="password" name="senha" id="senha" class="fundoVermelho" />
+    <br />
+    <br />
+    <div id="forca">Força:</div>
     <script type="text/javascript" src="./assets/jquery-3.4.1.js"></script>
     <script>
-        $(document).ready(function () {
-            $("#senha").keyup(function () {
-                // alert("Estou digitando");
-                var senha = $(this).val();
-                console.log('senha: ' + senha);
-                $('#forca').html(senha);
-            })
-        });
-    </script>
-</body>
+      $(document).ready(function() {
+        $("#senha").keyup(function() {
+          var senha = $(this).val();
+          var aceito = false;
 
+          var forca = 0;
+
+          if (senha.length > 4) {
+            forca += 25;
+          }
+
+          var regNumerico = new RegExp(/[0-9]/i);
+          if (regNumerico.test(senha)) {
+            forca += 25;
+          }
+
+          var regCaractere = new RegExp(/[a-z]/i);
+          if (regCaractere.test(senha)) {
+            forca += 25;
+          }
+
+          var regCaractereEspecial = new RegExp(/[^a-z0-9]/i);
+          if (regCaractereEspecial.test(senha)) {
+            forca += 25;
+          }
+
+          aceito = forca >= 75;
+          $(this).toggleClass("fundoVerde", aceito);
+          $(this).toggleClass("fundoVermelho", !aceito);
+
+          $("#forca").html(
+            `Força:${forca} - Senha:${senha} - Aceito:${
+              aceito ? "SimmmmmM" : "Nãoooooo"
+            }`
+          );
+        });
+      });
+    </script>
+  </body>
 </html>
