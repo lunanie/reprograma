@@ -1,0 +1,41 @@
+.rodape {
+    text-align: center;
+    position: relative;
+
+    .logo_img {
+        width: 124px;
+        height: 124px;
+        display: inline-block;
+        position: absolute;
+        left: 10.4vw;
+        bottom: 2vh;
+    }
+
+    p {
+        display: inline-block;
+    }
+
+    .vlt__topo {
+        width: 6vh;
+        position: absolute;
+        right: 2vh;
+        bottom: 5vh;
+    }
+}
+
+@media (max-width: 960px) {
+    .rodape {
+
+        .logo_img {
+            display: none;
+            position: unset;
+        }
+
+        .vlt__topo {
+            width: 30px;
+            right: -4vh;
+            bottom: 8vh;
+        }
+    }
+
+}

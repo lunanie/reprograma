@@ -1,0 +1,125 @@
+.navbar {
+    background-color: $azul;
+    height: 80px;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+
+    .imagem {
+        margin-top: 19px;
+        width: 124px;
+        height: 124px;
+    }
+
+    .menu_hamburguer {
+        display: none;
+    }
+
+    .lista_links {
+        list-style-type: none;
+        display: inline-block;
+        position: absolute;
+        top: 2px;
+        right: 12.5vw;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        li+li {
+            margin-left: 30px;
+        }
+
+        .links {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                color: $branco;
+            }
+        }
+
+        .btn_orcamento {
+            padding: 10px 30px 10px 30px;
+            background-color: $branco;
+            border-radius: $border-radius;
+
+            a {
+                color: $cor-secundaria;
+            }
+        }
+    }
+
+    .fechar {
+        display: none !important;
+    }
+
+}
+
+@media (max-width: $largura-mobile) {
+
+    .navbar {
+        background-color: $azul;
+        height: 80px;
+        position: relative;
+        width: 100vw;
+
+        .lista_links {
+            list-style-type: none;
+            display: block;
+            top: 50px;
+            text-transform: uppercase;
+            background-color: $cor-secundaria;
+            width: 50vw;
+
+            .links {
+                color: $branco;
+                display: block;
+            }
+
+            li+li {
+                margin-left: 0px;
+                margin-top: 30px;
+            }
+
+            .btn_orcamento {
+                width: 80%;
+                padding: 10px 5px;
+                background-color: $branco;
+                border-radius: $border-radius;
+                color: $cor-secundaria;
+                margin-bottom: 50px;
+            }
+        }
+
+        .imagem {
+            margin-top: -15px;
+            margin-left: 25vw;
+            width: 124px;
+            height: 124px;
+            z-index: 30;
+        }
+
+        .menu_hamburguer {
+            vertical-align: top;
+            margin-top: 30px;
+            margin-left: 20px;
+            display: inline-block;
+            height: 25px;
+        }
+    }
+
+    .visivel {
+        left: 0;
+        transition: 100ms;
+    }
+
+    .escondido {
+        left: -75vw;
+        transition: 10oms;
+    }
+
+    .fechar {
+        width: 100%;
+        text-align: end;
+        display: block;
+    }
+}

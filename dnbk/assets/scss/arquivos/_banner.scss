@@ -1,0 +1,69 @@
+.banner {
+    background-image: url("../img/banner.jpeg");
+    height: 80vh;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+
+    .titulo {
+        text-align: center;
+        font-size: $font-size-titulo;
+        font-weight: bold;
+        color: $branco;
+        width: 59vw;
+        margin: 0 auto;
+        padding-top: 25vh;
+    }
+
+    .subtitulo {
+        text-align: center;
+        font-size: $font-size-descricao;
+        color: $branco;
+        margin: 0 auto;
+        width: 58vw;
+    }
+
+    .botao {
+        text-align: center;
+        margin-top: 25px;
+
+        .btn {
+            width: 17vh;
+            border: $border;
+            border-radius: $border-radius;
+            height: $altura;
+            text-align: center;
+            background-color: $branco;
+            font-weight: bold;
+            margin: 0 auto;
+            padding: 10px 50px;
+            text-decoration: none;
+            border: none;
+            font-size: 18px;
+            color: $azul;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .banner {
+        height: 100vh;
+
+        .titulo {
+            width: 65vw;
+            font-size: 15px;
+        }
+
+        .subtitulo {
+            width: 60vw;
+            font-size: 18px;
+        }
+
+        .botao {
+            .btn {
+                font-size: 18px;
+                padding: 10px 30px 10px 30px;
+            }
+        }
+    }
+}

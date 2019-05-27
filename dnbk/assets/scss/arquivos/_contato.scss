@@ -1,0 +1,146 @@
+    .azul {
+        background: $azul;
+        color: $branco;
+        padding-bottom: 55px;
+
+        .orcamento {
+            @include flex (end, center);
+
+            .titulo {
+                font-size: $font-size-texto;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .subtitulo_size {
+                width: 40vh;
+            }
+
+            .subtitulo {
+                font-size: $font-size-subtitulo;
+                font-weight: bold;
+            }
+
+            .desc_size {
+                width: 48vh;
+            }
+
+            .titulo_desc {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 1px;
+            }
+
+            .titulo__contato {
+                padding-bottom: 15px;
+            }
+
+            .form {
+                display: flex;
+                flex-direction: column;
+                padding: 21px;
+            }
+
+            .item_form {
+                margin: 8px;
+                border-radius: 3px;
+                border: none;
+                height: 5vh;
+            }
+
+            .item_form-area {
+                margin: 8px;
+                border-radius: 3px;
+                border: none;
+                font-family: 'Open sans', sans-serif;
+            }
+
+            .botao {
+                width: 17vh;
+                margin-left: 19vh;
+                border: $border;
+                border-radius: $border-radius;
+                height: $altura;
+                text-align: center;
+                background-color: $branco;
+                font-weight: bold;
+                margin-top: 3%;
+            }
+
+            .subtitulo_size {
+                width: 40vh;
+            }
+
+            .subtitulo {
+                font-size: $font-size-subtitulo;
+                font-weight: bold;
+            }
+
+            .desc_size {
+                width: 48vh;
+            }
+
+            .titulo_desc {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 1px;
+            }
+
+            .titulo__contato {
+                padding-bottom: 15px;
+            }
+
+            .contato {
+                margin-right: 25vh;
+            }
+
+            .form {
+                display: flex;
+                flex-direction: column;
+                padding: 21px;
+            }
+
+            .item_form {
+                margin: 8px;
+                border-radius: 3px;
+                border: none;
+                height: 5vh;
+                padding: 2px 10px;
+            }
+
+            .item_form-area {
+                padding: 2px 10px;
+                margin: 8px;
+                border-radius: 3px;
+                border: none;
+                font-family: 'Open sans', sans-serif;
+            }
+
+            .botao {
+                width: 17vh;
+                margin-left: 19vh;
+                border: $border;
+                border-radius: $border-radius;
+                height: $altura;
+                text-align: center;
+                background-color: $branco;
+                font-weight: bold;
+                margin-top: 3%;
+            }
+        }
+    }
+
+    @media(max-width: 960px) {
+        .orcamento {
+            display: flex;
+            flex-direction: column;
+
+            .form {
+                padding: 0;
+            }
+
+            .botao {
+                margin-left: 29vh;
+            }
+        }
+    }
