@@ -1,0 +1,41 @@
+body{
+    background-image: url(./backazul.jpg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    text-align: center;
+}
+label{
+    font-size: 25px;
+    color: white; 
+    text-shadow: black 0.3em 0.3em 0.6em
+}
+
+h1{
+    font-size: 40px;
+    color: white; 
+    text-shadow: black 0.3em 0.3em 0.6em
+}
+.div_cidades{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-top: 30px;
+}
+
+#divCidades{
+    display: none;
+}
+
+
+.div_paises{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-top: 30px;
+}

@@ -1,0 +1,36 @@
+body{
+    background: black;
+    text-align: center;
+
+}
+
+#titulo{
+    text-decoration: none;
+    color: yellow;
+    font-family: 'Bungee Shade';
+    font-size: 70px;
+
+}
+
+#input{
+    border: none;
+    font-family: sans-serif;
+    color: black;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    margin: 80px;
+
+}
+
+#resposta{
+    color: white;
+    padding: 0px;
+    display: block;
+    margin-left: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Courgette', cursive;
+}

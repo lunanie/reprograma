@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+    font-family: 'Arvo', serif;
+}
+h1{
+    font-size: 50px;
+    color:rgb(223, 149, 223); 
+    text-shadow: 0 0 3px rgb(54, 4, 50);
+    font-weight: bold;
+}
+
+button{
+    font-size: 20px;
+    background-color: rgb(223, 149, 223);
+    border:none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 8px 6px -6px rgb(54, 4, 50);
+    font-family: 'Arvo', serif;
+    cursor: pointer;
+}
+
+p{
+    color: purple;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.div__foto{
+    margin: 20px;
+}
