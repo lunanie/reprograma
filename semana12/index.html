@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+
+    </ul>
+    <script>
+        let listas = ['pera', 'uva', 'tomate', 'kiwi', 'abacate']
+        let listUl = document.querySelector ('ul');
+
+        for (element of listas){ 
+        let listLi = document.createElement('li');
+        let textElement = document.createTextNode(element);
+        listUl.appendChild(listLi);
+        listLi.appendChild(textElement);
+    }
+        </script>
+    
+</body>
+</html>
