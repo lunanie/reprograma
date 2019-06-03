@@ -1,0 +1,52 @@
+.verde {
+    background-color: green;
+    border: solid 2px green;
+}
+
+.roxo {
+    background-color: purple;
+    border: solid 2px purple;
+}
+
+.lilas {
+    background-color: lightsalmon;
+    color: black;
+    border: solid 2px lightsalmon;
+}
+
+.branco {
+    background-color: white;
+    color: darkorchid;
+    border: solid 2px purple;
+}
+
+
+button {
+    padding: 20px 40px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+button.pequeno {
+    margin-top: 20px;
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: block;
+    justify-content: center;
+
+}
+
+#buttons-section {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+}
+
+p{
+    display: flex;
+    margin:0;
+    padding:0;
+}
