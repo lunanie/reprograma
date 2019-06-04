@@ -24,7 +24,8 @@
                 novoBotaoNoDom.setAttribute("class", `${this.cor} ${this.tamanho}`)
                 novoBotaoNoDom.innerHTML = this.texto
                 if (this.icone) {
-                    const icone = document.createElement("p")
+                    const icone = document.createElement("i")
+                    icone.setAttribute("class", `fas ${this.icone}`)
                     icone.innerHTML = "➕"
                     novoBotaoNoDom.appendChild(icone)
                 }
