@@ -91,3 +91,8 @@ const batata = {
     }
   ]
 }
+
+
+get qtd () {
+  return this.livros.length;
+}

@@ -1,0 +1,33 @@
+PROMISES
+Javascript é assíncrono
+Javascript roda na engine v8 
+é feito por threads
+javascript nao espera a primeira funcao terminar pra fazer a outra
+javascript pode ser um pedido para pizzaria, vc nao para sua vida pra esperar a pizza - assincrono
+sincrono seria parar tudo e esperar a pizza sem fazer mais nada
+
+microsserviços se uma parte nao estiver funcionando o resto estará funcionando 
+
+CALLBACK - função que depende de outra função
+
+forEach é um CALLBACK - livro.forEach
+parametro 1 é o item
+parametro 2 é o indice
+parametro 3 é o novo array
+
+CALLBACK recebe o item e o indice e o array, vc pode escolher usar os dois ou nao
+se quiser acessar o segundo, sempre tem q colocar o primeiro
+
+promises força o javascript a executar o fluxo sequencialmente
+
+jvm - linguagem intermediária
+
+CALLBACK HELL É UMA MÁ PRÁTICA
+
+
+PROMISES
+método then
+e depois catch que é quando dá erro
+
+
+

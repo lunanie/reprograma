@@ -60,6 +60,11 @@ listandoGeneros.addEventListener("click", (e) => {
     document.getElementById("disponibilidade").innerHTML = insertListinha(listaOrdenada, "genero")
 })
 
-const qtd = (listaDeLivrosJs.length)
+get qtd () {
+    return batata.livros.length;
+}
+
+biblioteca = new Biblioteca(autores.livros);
 
 document.getElementById("quantidadeLivros").innerHTML = qtd.length
+
