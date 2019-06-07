@@ -44,11 +44,7 @@ cepInput.addEventListener("blur", () => {
 
     const valorDoCampo = cepInput.value
     if (valorDoCampo) {
-        fetch(`https://viacep.com.br/ws/${valorDoCampo}/json/`)
-        .then(res => {
-            console.log(res)
-            return res.json()
-        })
+        getData(`https://viacep.com.br/ws/${valorDoCampo}/json/`)
             .then(resultadoDaAPI => {
                 cepInput.classList.remove("error")
                 cepError.innerHTML = ""

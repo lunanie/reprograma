@@ -1,0 +1,44 @@
+Introdução	6
+2.	Periféricos	7
+2.1.	HDs (discos rígidos)	7
+2.2.	CDs/DVDs	8
+2.3.	Monitor	9
+2.4.	Teclado	10
+2.5.	Mouse	11
+2.6.	Impressora/Scanner	12
+
+3.	Novas Tecnologias	13
+3.1.	Pen-drives	13
+3.2.	Dispositivos para jogos	14
+3.3.	Webcams	15
+3.4.	Caixas de som/Microfone	16
+3.5.	Leitor Biométrico	17
+3.6.	IOT	18
+3.7.	RFID	19
+3.8.	Bilhete Único	20
+3.9.	NFC	21
+3.10.	Bluetooth	22
+
+
+Periféricos do livro:
+1.	hds discos rigidos
+2.	cds/dvds
+3.	monitor
+4.	teclado
+5.	mouse
+6.	impressora/scanner
+7.	modem????????
+8.	fitas magnéticas??????
+9.  disquetes???
+
+Novas Tecnologias (escolher 3):
+1.	pen-drives?
+2.	dispositivos para jogos?
+3.	câmeras de vídeo?
+4.	caixas de som/ microfone?
+5.	leitor biométrico?
+6.	IOT?
+7.	RFID?
+8.	Bilhete Único?
+9.	NFC?
+10.	Bluetooth

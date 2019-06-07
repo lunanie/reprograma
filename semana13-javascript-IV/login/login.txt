@@ -1,0 +1,8 @@
+ANOTAÇÕES DE AULA
+
+Exemplos de json para estudos
+https://jsonplaceholder.typicode.com/
+
+
+https://docs.emmet.io/abbreviations/syntax/
+
