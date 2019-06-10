@@ -1,0 +1,58 @@
+https://medium.com/reactbrasil/jsx-de6f43b06f41
+
+
+react do facebook
+angular do google
+view - novo e tá crescendo
+
+JSX - html dentro do javascript - ferramenta introduzida pelo react
+Javascript XML
+
+local - na pasta
+global na maquina e nao vai quando exporta o projeto
+
+desenvolvimento - modificar
+produção - usar
+
+npm init 
+npm install
+npm install @babel/core @babel/cli --save-dev
+
+npx babel
+npx babel --version
+cli habilita o babel na linha de comando
+npx acessa local (não global)
+
+@babel/preset-env javascript moderno para antigo
+@babel/preset-react pegar react e transforma em javascript normal
+
+arquitetura de software 
+pwa 
+
+comando de compilar:
+npx babel script.js --out-file=compilado.js --presets=@babel/env,@babel/react
+
+npx babel script.js --out-file=compilado.js --presets=@babel/env,@babel/react --watch
+ctrl+c para a compilação do babel
+
+
+npm install --save-dev live-server
+
+npx live-server -v
+
+npx live-server
+
+
+npm run compilar
+npm run server
+
+npm init
+npx create-react-app my-app
+
+
+yarn create react-app my-app
+
+
+C:\Windows\system32\cmd.exe
+
+
