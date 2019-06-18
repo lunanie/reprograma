@@ -1,6 +1,9 @@
 import React from 'react'
-export default function Chat (props) {
-    return(
-        <p>Você está no Chat</p>
-        )
-    }
+
+function Chat(props){
+    return (
+        <p>Você esta no Chat</p>
+    )
+}
+
+export default Chat
