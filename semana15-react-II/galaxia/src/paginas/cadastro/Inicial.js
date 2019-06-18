@@ -1,21 +1,31 @@
-import React from 'react'
-import Astronauta from '../../imagens/astronaut.png'
-import Globo from '../../imagens/globe.png'
+import React from "react";
+import Astronauta from "../../imagens/astronaut.png";
+import Globo from "../../imagens/globe.png";
+import BotaoCadastro from "../../componentes/formulario/BotaoCadastro";
 
+// props = {
+//   alteraConteudo
+// };
 export default function Inicial(props) {
-    return (
-        <div className="pagina">
-            <h1>Escolha qual tipo de cadastro</h1>
-            <div className="pagina__botao">
-                <button className="botao-icone">
-                    <img src={Astronauta} className="botao-imagem" alt="icone Astronauta" />
-                    <span>Pessoa Fisica</span>
-                </button>
-                <button className="botao-icone">
-                    <img src={Globo} className="botao-imagem" alt="icone Globo" />
-                    <span>Pessoa Juridica</span>
-                </button>
-            </div>
-        </div>
-    )
+  return (
+    <div className="pagina">
+      <h1>Escolha qual tipo de cadastro</h1>
+      <div className="pagina__botao">
+        <BotaoCadastro
+          srcImagem={Astronauta}
+          altImagem="icone astronauta"
+          titulo="Pessoa Física"
+          valorImagem="PF"
+          acaoBotao = {props.alteraConteudo}
+        />
+        <BotaoCadastro
+          srcImagem={Globo}
+          altImagem="icone globo"
+          titulo="Pessoa Jurídica"
+          valorImagem="PJ"
+          acaoBotao = {props.alteraConteudo}
+        />
+      </div>
+    </div>
+  );
 }
