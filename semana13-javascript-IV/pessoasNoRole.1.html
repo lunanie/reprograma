@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pessoas no Rolê</title>
+</head>
+
+<body>
+    <form id="form">
+        <input type="text" placeholder="Nome" id="campo">
+        <input type="submit" value="Verificar" >
+    </form>
+</body>
+<script>
+    const nomesNoRole = [
+        "Adam", "Alex", "Aaron", "Ben", "Carl", "Dan", "David", "Edward", "Fred", "Frank", "George", "Hal", "Hank",
+        "Ike", "John", "Jack", "Joe", "Larry", "Monte", "Matthew", "Mark", "Nathan", "Otto", "Paul", "Peter",
+        "Roger", "Roger", "Steve", "Thomas", "Tim", "Ty", "Victor", "Walter"
+    ]
+
+
+
+function validacao (nome){
+    if (nome ==="") return "O campo está vazio"
+}
+
+document.getElementById("form-do-role").addEventListener("submit", 
+function(event){
+    event.preventDefault()
+    const valorCampo = document.getElementById("nome").value
+    const validaCampo = validacao(valorCampo)
+    console.log({valorCampo})
+    console.log({validaCampo})
+})
+
+const procuraNome = nome => nomesNoRole.includes(nome)
+const exibirNome = nome => {
+    if (procuraNome){
+        document.getElementById("status").innerHTML = `${nome}`
+    }
+}
+
+</script>
+
+</html>

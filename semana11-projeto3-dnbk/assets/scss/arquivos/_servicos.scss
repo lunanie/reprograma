@@ -1,0 +1,106 @@
+.servicos {
+  .servicos__paragrafo {
+    color: #707070;
+  }
+
+  .servicos__container {
+    width: 75vw;
+    margin: 0 auto;
+  }
+
+  padding-top: 60px;
+  background-color: $cinza-claro;
+
+  .servicos__intro {
+    margin: 0 auto;
+    width: 60vw;
+    text-align: center;
+
+    h5 {
+      font-size: $font-size-texto;
+      color: $cor-titulo-vermelho;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: $font-size-subtitulo;
+      color: $cor-secundaria;
+    }
+  }
+
+  .servicos__divcartoes {
+    @include flex(flex-start, space-around);
+  }
+
+  .servicos__cartao {
+    @include descricao;
+  }
+
+  .servicos__titulo__cartao {
+    font-size: $font-size-descricao;
+    color: $cor-titulo-vermelho;
+  }
+
+  .servicos__suporte {
+    margin: 0 auto;
+    text-align: center;
+    width: 60vw;
+
+    h2 {
+      color: $cor-titulo-vermelho;
+      font-size: $font-size-subtitulo;
+    }
+  }
+
+  .servicos__img {
+    width: 74.8px;
+    height: 74.8px;
+  }
+}
+
+.servicos__curva {
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+  width: 100%;
+  height: 100px;
+  background: #121a47;
+  position: relative;
+  bottom: -1px;
+  margin-top: 40px;
+}
+
+@media (max-width: 960px) {
+  .servicos {
+    .servicos__divcartoes {
+      @include flex(center, center);
+      flex-direction: column;
+    }
+
+    .servicos__cartao {
+      text-align: center;
+      width: 75vw;
+    }
+
+    .servicos__intro {
+      margin: 0 auto;
+      width: 75vw;
+      text-align: center;
+
+      h5 {
+        font-size: $font-size-texto-resp;
+        color: $cor-titulo-vermelho;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-size: $font-size-subtitulo-resp;
+        color: $cor-secundaria;
+      }
+    }
+
+    .servicos__suporte {
+      margin: 0 auto;
+      text-align: center;
+      width: 75vw;
+    }
+  }
+}

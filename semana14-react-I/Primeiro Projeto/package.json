@@ -1,0 +1,21 @@
+{
+  "name": "semana14-react-i",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compilar": "babel script.js --out-file=compilado.js --presets=@babel/env,@babel/react --watch",
+    "server": "live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {},
+  "description": ""
+}

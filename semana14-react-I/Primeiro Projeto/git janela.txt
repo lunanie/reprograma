@@ -1,0 +1,313 @@
+
+EH326@EH326 MINGW64 ~
+$ cd Documents/
+
+EH326@EH326 MINGW64 ~/Documents
+$ cd luna
+bash: cd: luna: No such file or directory
+
+EH326@EH326 MINGW64 ~/Documents
+$ cd lunanie/
+
+EH326@EH326 MINGW64 ~/Documents/lunanie
+$ cd reprograma/
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        semana14-react-I/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma (master)
+$ cd ..
+
+EH326@EH326 MINGW64 ~/Documents/lunanie
+$ cd fatec-ex/
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/fatec-ex (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/fatec-ex (master)
+$ git pull
+Username for 'https://github.com': lunanie
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 13 (delta 2), reused 13 (delta 2), pack-reused 0
+Unpacking objects: 100% (13/13), done.
+From https://github.com/lunanie/fatec-ex
+   3997e72..1b351f3  master     -> origin/master
+Updating 3997e72..1b351f3
+Fast-forward
+ Programa2-Vendas/Totalizacao5.py                   |    52 +
+ .../projeto final/PjPgm191_N2. pj1 e pj2.pdf       |   Bin 0 -> 163020 bytes
+ .../projeto final/PjPgm191_N2. pj3 e pj4.pdf       |   Bin 0 -> 157361 bytes
+ .../projeto final/projetos191_n2.pj2/VENDAS.TXT    |  1000 ++
+ .../projeto final/projetos191_n2.pj4/produtos.txt  |    16 +
+ .../projeto final/projetos191_n2.pj4/vendas.txt    | 12159 +++++++++++++++++++
+ Programa2-Vendas/projeto2.1/VENDAS.txt             |  1472 +++
+ 7 files changed, 14699 insertions(+)
+ create mode 100644 Programa2-Vendas/Totalizacao5.py
+ create mode 100644 Programa2-Vendas/projeto final/PjPgm191_N2. pj1 e pj2.pdf
+ create mode 100644 Programa2-Vendas/projeto final/PjPgm191_N2. pj3 e pj4.pdf
+ create mode 100644 Programa2-Vendas/projeto final/projetos191_n2.pj2/VENDAS.TXT
+ create mode 100644 Programa2-Vendas/projeto final/projetos191_n2.pj4/produtos.txt
+ create mode 100644 Programa2-Vendas/projeto final/projetos191_n2.pj4/vendas.txt
+ create mode 100644 Programa2-Vendas/projeto2.1/VENDAS.txt
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/fatec-ex (master)
+$ cd ..
+
+EH326@EH326 MINGW64 ~/Documents/lunanie
+$ cd reprograma/
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma (master)
+$ git pull
+Already up to date.
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma (master)
+$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (reprograma)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository: (https://github.com/lunanie/reprograma.git)
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\Renomear.DESKTOP-BS0U13S\Documents\lunanie\reprograma\package.json:
+
+{
+  "name": "reprograma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lunanie/reprograma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lunanie/reprograma/issues"
+  },
+  "homepage": "https://github.com/lunanie/reprograma#readme"
+}
+
+
+Is this OK? (yes)
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma (master)
+$ npm install --save-dev node-sass
+
+> node-sass@4.12.0 install C:\Users\Renomear.DESKTOP-BS0U13S\Documents\lunanie\reprograma\node_modules\node-sass
+> node scripts/install.js
+
+Cached binary found at C:\Users\Renomear.DESKTOP-BS0U13S\AppData\Roaming\npm-cache\node-sass\4.12.0\win32-x64-64_binding.node
+
+> node-sass@4.12.0 postinstall C:\Users\Renomear.DESKTOP-BS0U13S\Documents\lunanie\reprograma\node_modules\node-sass
+> node scripts/build.js
+
+Binary found at C:\Users\Renomear.DESKTOP-BS0U13S\Documents\lunanie\reprograma\node_modules\node-sass\vendor\win32-x64-64\binding.node
+Testing binary
+Binary is fine
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN reprograma@1.0.0 No description
+
++ node-sass@4.12.0
+added 174 packages from 138 contributors and audited 529 packages in 13.1s
+found 0 vulnerabilities
+
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma (master)
+$ cd semana14
+bash: cd: semana14: No such file or directory
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma (master)
+$ ls
+node_modules/                         semana08.5-sabado-js/         semana14-react-I/
+semana02-html-css/                    semana08-projeto2-todo-list/  semana15-react-II/
+semana03-responsivo/                  semana09-bootstrap-sass/      semana16-react-III/
+semana04-projeto1-m-de-maravilhosas/  semana10-jquery/              semana17-carreira/
+semana05-logica-js/                   semana11-projeto3-dnbk/       semana18-projeto-4/
+semana06-javascript-I/                semana12-javascript-III/
+semana07-javascript-II/               semana13-javascript-IV/
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma (master)
+$ cd semana14
+bash: cd: semana14: No such file or directory
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma (master)
+$ cd semana14-react-I/
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma/semana14-react-I (master)
+$ ls
+ package.json   package-lock.json  'Primeiro Projeto'/
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma/semana14-react-I (master)
+$ nmp init
+bash: nmp: command not found
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma/semana14-react-I (master)
+$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (semana14-react-i)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\Renomear.DESKTOP-BS0U13S\Documents\lunanie\reprograma\semana14-react-I\package.json:
+
+{
+  "name": "semana14-react-i",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma/semana14-react-I (master)
+$ npm install --save-dev node-sass
+
+> node-sass@4.12.0 install C:\Users\Renomear.DESKTOP-BS0U13S\Documents\lunanie\reprograma\semana14-react-I\node_modules\node-sass
+> node scripts/install.js
+
+Cached binary found at C:\Users\Renomear.DESKTOP-BS0U13S\AppData\Roaming\npm-cache\node-sass\4.12.0\win32-x64-64_binding.node
+
+> node-sass@4.12.0 postinstall C:\Users\Renomear.DESKTOP-BS0U13S\Documents\lunanie\reprograma\semana14-react-I\node_modules\node-sass
+> node scripts/build.js
+
+Binary found at C:\Users\Renomear.DESKTOP-BS0U13S\Documents\lunanie\reprograma\semana14-react-I\node_modules\node-sass\vendor\win32-x64-64\binding.node
+Testing binary
+Binary is fine
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN semana14-react-i@1.0.0 No description
+npm WARN semana14-react-i@1.0.0 No repository field.
+
++ node-sass@4.12.0
+added 174 packages from 138 contributors and audited 529 packages in 8.608s
+found 0 vulnerabilities
+
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma/semana14-react-I (master)
+$ npm install @babel/core @babel/cli --save-dev
+npm WARN semana14-react-i@1.0.0 No description
+npm WARN semana14-react-i@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ @babel/core@7.4.5
++ @babel/cli@7.4.4
+added 163 packages from 112 contributors and audited 2872 packages in 11.043s
+found 0 vulnerabilities
+
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma/semana14-react-I (master)
+$ git config --global user.email lunanie@gmail.com
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma/semana14-react-I (master)
+$ cd ..
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma (master)
+$ cd ..
+
+EH326@EH326 MINGW64 ~/Documents/lunanie
+$ cd fatec-ex/
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/fatec-ex (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Programa2-Vendas/alunos7.py
+        T6 Grupo-Aoki (2).docx
+        T6 Grupo-Aoki.docx
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/fatec-ex (master)
+$ git add .
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/fatec-ex (master)
+$ git commit -m"t6 aoki"
+[master cf95346] t6 aoki
+ 3 files changed, 38 insertions(+)
+ create mode 100644 Programa2-Vendas/alunos7.py
+ create mode 100644 T6 Grupo-Aoki (2).docx
+ create mode 100644 T6 Grupo-Aoki.docx
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/fatec-ex (master)
+$ git push origin master
+Username for 'https://github.com': lunanie
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 628.03 KiB | 11.42 MiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/lunanie/fatec-ex.git
+   1b351f3..cf95346  master -> master
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/fatec-ex (master)
+$ cd ..
+
+EH326@EH326 MINGW64 ~/Documents/lunanie
+$ cd reprograma/
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma (master)
+$ cd semana14-react-I/
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma/semana14-react-I (master)
+$ ls
+ node_modules/   package.json   package-lock.json  'Primeiro Projeto'/
+
+EH326@EH326 MINGW64 ~/Documents/lunanie/reprograma/semana14-react-I (master)
+$

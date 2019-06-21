@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Senha</title>
+</head>
+
+<body>
+    <form>
+        <!-- <label>Digite sua senha</label><br>
+        <input id="senha" type="password"><br> -->
+        <button type="submit" onclick="entrar()">Entrar</button>
+    </form>
+
+    <script>
+        function entrar() {
+            let senha
+            do {
+                senha = prompt("Digite sua senha: ", "alguma coisa");
+                if (senha == '2112js')
+                    alert("Entrando no sistema...");
+                else
+                    alert("Senha invalida, tente novamente!");
+            } while (senha !== '2112js');
+        }
+    </script>
+</body>

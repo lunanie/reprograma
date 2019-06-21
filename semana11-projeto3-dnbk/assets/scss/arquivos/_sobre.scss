@@ -1,0 +1,73 @@
+.sobre {
+    @include flex(center, space-around);
+    padding-bottom: 70px;
+
+
+    .titulo {
+        color: $cor-titulo-vermelho;
+        font-size: $font-size-texto;
+        text-transform: uppercase;
+        margin-top: 50px;
+    }
+
+    .subtitulo {
+        color: $cor-secundaria;
+        font-weight: bold;
+        font-size: $font-size-subtitulo;
+    }
+
+    .texto {
+        color: $cor-texto;
+        font-size: $font-size-texto;
+    }
+
+    .img {
+        width: 44vw;
+        padding-right: 2vw;
+    }
+
+    .input {
+        padding: 2px 10px;
+        width: 100%;
+        height: $altura;
+        margin: 5px 0;
+        border-radius: 4px;
+        border: solid 1px $cor-texto;
+    }
+
+    .btn {
+        width: 55%;
+        margin-left: 46%;
+        border-radius: $border-radius;
+        height: $altura;
+        text-align: center;
+        margin-top: 5%;
+        border: $border $cor-texto;
+        background-color: $cor-titulo-vermelho;
+        color: $cor-primaria;
+    }
+
+}
+
+
+@media (max-width: 960px) {
+    .sobre {
+        flex-direction: column;
+
+        .img {
+            width: 90vw;
+            margin-top: -15px;
+            margin-left: 14px;
+
+        }
+
+        .subtitulo {
+            font-size: 26px;
+        }
+
+        .btn {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}

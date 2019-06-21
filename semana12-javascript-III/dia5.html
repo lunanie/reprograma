@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let numero = {
+            num1: 2,
+            num2: 4,
+            soma: function () {
+                return num1 + num2
+            }
+        }
+        numero
+        let numero2 = new Object();
+
+        numero2.prop = 'texto'
+
+        let numero3;
+
+
+        let teste = {
+            num1: 2,
+            num2: 4,
+            soma: function () {
+                return this.num1 + this.num2
+            }
+        }
+
+        function Teste(num1, num2) {
+            this.numero1 = num1;
+            this.numero2 = num2;
+        }
+
+
+
+
+
+        function Teste(num1, num2) {
+            this.numero1 = num1;
+            this.numero2 = num2;
+
+        }
+
+
+
+        function testeMultiplicacao(num1, num2) {
+            this.numero1 = num1;
+            this.numero2 = num2;
+            this.mult = function () {
+                return this.numero1 * this.numero2;
+            }
+        }
+
+        const multA = new testeMultiplicacao(6, 3)
+
+        multA.mult()
+
+
+
+
+
+        class Pessoa {
+            constructor(nome, idade) {
+                this.nome = nome;
+                this.idade = idade;
+            }
+            retornarNome() {
+                console.log(`Nome: ${this.nome}`);
+            }
+        }
+
+
+
+
+        class Professor extends Pessoa {
+            constructor(nome, idade, materia) {
+                super(nome, idade);
+                this.materia = `Javascript`;
+            }
+            darAula() {
+                console.log(`Vamos dar aula de ${this.materia}`)
+            }
+        }
+
+
+
+
+
+        const bruna = new Pessoa(`Bruna`, 25)
+
+        bruna.nome
+        bruna.idade
+        bruna.retornarNome()
+        Nome: Bruna
+        class Pessoa {
+            constructor(nome, idade) {
+                this.nome = nome;
+                this.idade = idade;
+            }
+            retornarNome() {
+                console.log(`Nome: ${this.nome}`);
+            }
+        }
+        undefined
+        class Professor extends Pessoa {
+            constructor(nome, idade, materia) {
+                super(nome, idade);
+                this.materia = `Javascript`;
+            }
+            darAula() {
+                console.log(`Vamos dar aula de ${this.materia}`)
+            }
+        }
+        undefined
+        const bruna = new Pessoa(`Bruna`, 25)
+        undefined
+        bruna.nome "Bruna"
+        bruna.idade
+        25
+        bruna.retornarNome
+        ƒ retornarNome() {
+            console.log(`Nome: ${this.nome}`);
+        }
+        bruna.retornarNome()
+        VM232: 7 Nome: Bruna
+        undefined
+        const mayara(`Mayara`, 20)
+        VM585: 1 Uncaught SyntaxError: Missing initializer in
+            const declaration
+        const mayara = new Pessoa(`Mayara`, 20)
+        undefined
+        const jani = new Professor(`Jani`, 27)
+        undefined
+        jani
+        Professor {
+            nome: "Jani",
+            idade: 27,
+            materia: "Javascript"
+        }
+        jani.materia "Javascript"
+        jani.idade
+        27
+        const jani = new Professor(`Jani`, 27, `java`)
+        VM729: 1 Uncaught SyntaxError: Identifier 'jani'
+        has already been declared
+        at < anonymous >: 1: 1(anonymous) @ VM729: 1
+        const jani1 = new Professor(`Jani`, 27, `java`)
+        undefined
+        jani1.materia "Javascript"
+        VM434: 1 Console was cleared
+        undefined
+        let p = "aaa"
+        undefined
+        p = 10
+        10
+        p.toString
+        ƒ toString() {
+            [native code]
+        }
+        p.toString()
+        "10"
+        parseInt(p)
+        10
+        p.toString()
+        "10"
+        tipeof(p)
+        VM612: 1 Uncaught ReferenceError: tipeof is not defined
+        at < anonymous >: 1: 1(anonymous) @ VM612: 1
+        typeof (p)
+        "number"
+        p = p.toString()
+        "10"
+        p
+            "10"
+
+
+
+
+
+    </script>
+
+    <script>
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+</body>
+
+</html>

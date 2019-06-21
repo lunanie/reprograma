@@ -1,0 +1,26 @@
+{
+  "name": "dnbk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "sass": "^1.20.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaAliceCosta/dnbk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnaAliceCosta/dnbk/issues"
+  },
+  "homepage": "https://github.com/AnaAliceCosta/dnbk#readme"
+}

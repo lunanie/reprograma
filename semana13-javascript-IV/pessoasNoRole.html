@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pessoas no Rolê</title>
+</head>
+
+<body>
+    <form id="form">
+        <input type="text" placeholder="Nome" id="campo">
+        <input type="submit" value="Verificar" >
+    </form>
+</body>
+<script>
+    const nomesNoRole = [
+        "Adam", "Alex", "Aaron", "Ben", "Carl", "Dan", "David", "Edward", "Fred", "Frank", "George", "Hal", "Hank",
+        "Ike", "John", "Jack", "Joe", "Larry", "Monte", "Matthew", "Mark", "Nathan", "Otto", "Paul", "Peter",
+        "Roger", "Roger", "Steve", "Thomas", "Tim", "Ty", "Victor", "Walter"
+    ]
+
+    let form = document.getElementById("form")
+    let campo = document.getElementById("campo")
+
+
+    form.addEventListener("submit", function (event) {
+        const valor = campo.value;
+        const verifica = nomesNoRole.includes(campo.value);
+
+        if (verifica == true) {
+            alert("Este nome está no rolê")
+        } else {
+            alert("Este nome não está no rolê")
+            event.preventDefault()
+        }
+    });
+</script>
+
+</html>

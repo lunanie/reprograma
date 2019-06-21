@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="buttons-section"></div>
+    <script>
+        class Botao {
+            constructor(cor, tamanho, texto, icone) {
+                this.cor = cor
+                this.tamanho = tamanho
+                this.texto = texto
+                this.icone = icone
+            }
+            desenhaBotao(local) {
+                const novoBotaoNoDom = document.createElement('button')
+                novoBotaoNoDom.setAttribute("class", `${this.cor} ${this.tamanho}`)
+                novoBotaoNoDom.innerHTML = this.texto
+                if (this.icone) {
+                    const icone = document.createElement("i")
+                    icone.setAttribute("class", `fas ${this.icone}`)
+                    icone.innerHTML = "➕"
+                    novoBotaoNoDom.appendChild(icone)
+                }
+                document.getElementById("buttons-section").appendChild(novoBotaoNoDom)
+                console.log(novoBotaoNoDom)
+            }
+        }
+        const novoBotao = new Botao('verde', 'pequeno', 'click me!')
+        novoBotao.desenhaBotao()
+        const botaoRoxo = new Botao('roxo', 'pequeno', 'botao roxo')
+        botaoRoxo.desenhaBotao()
+        const botaoLilas = new Botao('lilas', 'pequeno', 'lilazinho')
+        botaoLilas.desenhaBotao()
+        const botaoBranco = new Botao('branco', 'pequeno', 'branquinho', 'icone')
+        botaoBranco.desenhaBotao()
+    </script>
+</body>
+
+</html>

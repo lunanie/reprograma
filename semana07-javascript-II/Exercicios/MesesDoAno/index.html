@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <title>Notas</title>
+</head>
+
+<body>
+    <form>
+        Digite um número de 1 a 12 <input type="number" name="1nota" id="mesinput"><br>
+        <button onclick="mostrames()" type="submit">Mostra qual é o mês</button>
+    </form>
+    <script>
+
+        function mostrames() {
+            let mes = parseInt(document.getElementById("mesinput").value);
+            switch (mes) {
+                case 1:
+                    alert("Janeiro");
+                    break;
+                case 2:
+                    alert("Fevereiro");
+                    break;
+                case 3:
+                    alert("Março");
+                    break;
+                case 4:
+                    alert("Abril");
+                    break;
+                case 5:
+                    alert("Maio");
+                    break;
+                case 6:
+                    alert("Junho");
+                    break;
+                case 7:
+                    alert("Julho");
+                    break;
+                case 8:
+                    alert("Agosto");
+                    break;
+                case 9:
+                    alert("Setembro");
+                    break;
+                case 10:
+                    alert("Outubro");
+                    break;
+                case 11:
+                    alert("Novembro");
+                    break;
+                case 12:
+                    alert("Dezembro");
+                    break;
+                default:
+                    alert("Não identificado");
+            }
+        }
+    </script>
+</body>
+
+</html>

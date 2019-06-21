@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+}
+
+.col{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.linha1{padding: 10px; background: rgb(84, 84, 240)}
+.linha2{padding: 10px; background: rgb(101, 240, 159)}
+.linha3{padding: 10px; background: rgb(255, 255, 108)}
+.linha4{padding: 10px; background: rgb(245, 172, 62)}
+.linha5{padding: 10px; background: rgb(212, 77, 201)}
+
+label, input, p{
+    margin: 8px 0;
+}
+
+input{
+    border: solid 1px #ccc;
+    width: 100%;
+}
+
+.content{
+    display: flex;
+}
+
+button{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    background-color: purple;
+    width: 100%;
+    color: white;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+td{
+    padding: 10px;
+}
+
+img{
+    width: 100%;
+}

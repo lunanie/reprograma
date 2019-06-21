@@ -1,0 +1,7 @@
+
+
+PS C:\Users\Renomear.DESKTOP-BS0U13S\Documents\lunanie> cd .\reprograma\
+PS C:\Users\Renomear.DESKTOP-BS0U13S\Documents\lunanie\reprograma> cd .\semana14-react-I\
+PS C:\Users\Renomear.DESKTOP-BS0U13S\Documents\lunanie\reprograma\semana14-react-I> cd '.\Primeiro Projeto\'
+
+PS C:\Users\Renomear.DESKTOP-BS0U13S\Documents\lunanie\reprograma\semana14-react-I\Primeiro Projeto> npx babel script.js --out-file=compilado.js --watch --presets=@babel/env,@babel/react
