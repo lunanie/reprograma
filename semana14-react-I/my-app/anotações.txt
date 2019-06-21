@@ -1,0 +1,15 @@
+compontente:
+react: 
+funcao,  que tem UM paramentro de um objeto que retorna um JSX
+
+
+
+super herda as propriedades da mae dele
+set state 
+
+this.setState(() => {
+    return { 
+        cont: 2
+}
+}
+)
