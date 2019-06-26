@@ -7,6 +7,9 @@ import "./loginPage.css";
 class LoginPage extends Component {
   constructor(props) {
     super(props);
+    this.state={
+      usuarioInvalido: false,
+    }
   }
 
 //   fazer um state
@@ -34,7 +37,14 @@ class LoginPage extends Component {
         this.props.history.push("/");
       })
       .catch(err => {
-        err.json().then(res => console.log("catch", res));
+        err.json()
+        .then(res => console.log("catch", res));
+        this.setState({
+          usuarioInvalido: true,
+        })
+
+
+
         // this.props.history.push("#errozinho");
       });
   };
@@ -79,8 +89,10 @@ class LoginPage extends Component {
                     name="senha"
                   />
                 </div>
-                {/* mensagem de erro! */}
-                {/* <div id="errozinho" className="loginPage__errorBox">Mensagem de erro!</div> */}
+{/* mensagem de erro! */}
+                {this.state.usuarioInvalido ? <div className="loginPage__errorBox">{this.state.message}
+                  Mensagem de erro! 
+                  </div>:""}
                 <div className="loginPage__inputWrap">
                   <button className="loginPage__btnLogin" type="submit">
                     Logar

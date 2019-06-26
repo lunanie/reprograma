@@ -1,27 +1,3 @@
-// import React from 'react'
-// import {Switch , Route } from 'react-router-dom'
-
-
-// // paginas
-// import Home from './pages/Home/Home'
-// import LoginPage from './pages/LoginPage'
-
-// const Roteamento = () => {
-//     return(
-// <Switch>
-//     {/* <PrivateRoute exact path= '/' component = {Home} */}
-//     <Route exact path ="/" component = {Home}/>
-//     <Route path ="/login" component = {LoginPage}/>
-
-// </Switch>
-//     )
-// }
-
-// export default Roteamento
-
-
-
-
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 
@@ -42,9 +18,11 @@ function estAutenticado(){
 class PrivateRoute extends React.Component {
     render() {
         const Component = this.props.component
+        console.log(this.props)
         if(estAutenticado()) {
             // componente rota do Tweet
             return <Route render={()=> <Component {...this.props}></Component>}></Route>
+            // <Route exact={this.props.exact} path = {this.props.path} component = {this.props.component}></Route>
         } 
         else{
             return <Redirect to="/login"></Redirect>
@@ -56,7 +34,7 @@ class PrivateRoute extends React.Component {
 const Roteamento = () => {
     return (
         <Switch>
-            <PrivateRoute exact path="/" component={Home} />
+            <PrivateRoute exact path="/" texto = 'reprograma' component={Home} />
             <Route path="/login" component={LoginPage} />
         </Switch>
     )
