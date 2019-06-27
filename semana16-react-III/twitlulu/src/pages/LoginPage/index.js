@@ -1,19 +1,16 @@
 import React, { Component, Fragment } from "react";
 import Cabecalho from "../../components/Cabecalho";
 import Widget from "../../components/Widget";
-
 import "./loginPage.css";
 
 class LoginPage extends Component {
   constructor(props) {
     super(props);
-    this.state={
+    this.state = {
       usuarioInvalido: false,
-    }
+      msgErro: ""
+    };
   }
-
-//   fazer um state
-
   fazerLogin = e => {
     e.preventDefault();
     console.log(this.inputLogin.value);
@@ -29,30 +26,36 @@ class LoginPage extends Component {
     })
       .then(resp => {
         if (!resp.ok) throw resp;
+        // throw envia a resposta pro catch e pula o then
+        // .json () pega só a resposta do back
+        // tipo promisse: precisamos fazer outro then para capturar o valor
         return resp.json();
       })
       .then(respJson => {
+        // peguei o retorno no back e consigo usar como variável
+        // se a resposta for 200 ok
         console.log("then ok", respJson);
         localStorage.setItem("TOKEN", respJson.token);
         this.props.history.push("/");
       })
       .catch(err => {
-        err.json()
-        .then(res => console.log("catch", res));
-        this.setState({
-          usuarioInvalido: true,
-        })
-
-
-
+        err.json().then(res => {
+          console.log("catch", res);
+          this.setState({
+            // set state faz com que o render rode denovo e atualize nossa tela
+            usuarioInvalido: true,
+            msgErro: res.message
+            // msgErro=res.message
+          });
+          // alert(res.message)
+        });
         // this.props.history.push("#errozinho");
       });
   };
-
   render() {
     // let inputLogin = ""
     // let inputSenha = ""
-
+    // this.fazerLogin.err.res = msgErro
     return (
       <Fragment>
         <Cabecalho />
@@ -89,10 +92,14 @@ class LoginPage extends Component {
                     name="senha"
                   />
                 </div>
-{/* mensagem de erro! */}
-                {this.state.usuarioInvalido ? <div className="loginPage__errorBox">{this.state.message}
-                  Mensagem de erro! 
-                  </div>:""}
+                {/* mensagem de erro! */}
+                {this.state.usuarioInvalido ? (
+                  <div className="loginPage__errorBox">
+                    {this.state.msgErro}
+                  </div>
+                ) : (
+                  ""
+                )}
                 <div className="loginPage__inputWrap">
                   <button className="loginPage__btnLogin" type="submit">
                     Logar
