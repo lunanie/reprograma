@@ -1,0 +1,7 @@
+se precisar usar state usa classe
+senao usa função
+
+usar arrow function pra nao ter que usar o bind
+
+https://pt-br.reactjs.org/docs/hooks-intro.html
+
