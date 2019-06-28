@@ -36,6 +36,8 @@ class LoginPage extends Component {
         // se a resposta for 200 ok
         console.log("then ok", respJson);
         localStorage.setItem("TOKEN", respJson.token);
+        // coloquei nome do login
+        // localStorage.setItem("NOMEDOLOGIN", respJson.usuario.login);
         this.props.history.push("/");
       })
       .catch(err => {

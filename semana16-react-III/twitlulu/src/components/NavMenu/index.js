@@ -3,6 +3,7 @@ import navMenuStyles from "./navMenu.module.css";
 import { Link } from "react-router-dom";
 
 export default class NavMenu extends Component {
+  
   render() {
     return (
       <nav className={navMenuStyles.navMenu}>
