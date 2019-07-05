@@ -1,0 +1,16 @@
+git config --global user.email johndoe@example.com
+
+
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+
+git config --global user.email 
+
+deslogar
+
+git config --global --unset-all user.email 
+
+git config --global --list
+
+
+

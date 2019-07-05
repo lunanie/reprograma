@@ -1,0 +1,142 @@
+
+EH326@EH326 MINGW64 ~
+$ cd documents
+
+EH326@EH326 MINGW64 ~/documents
+$ ls
+ desktop.ini   lunanie/       'Minhas Imagens'@
+ Juliana/     'Meus Vídeos'@  'Minhas Músicas'@
+
+EH326@EH326 MINGW64 ~/documents
+$ cd lunanie
+
+EH326@EH326 MINGW64 ~/documents/lunanie
+$ ls
+antigos/  CV/  projetosfinais/  reprograma/
+
+EH326@EH326 MINGW64 ~/documents/lunanie
+$ cd cv
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv
+$ ls
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv
+$ git clone https://github.com/lunanie/T7-reprograma-CV.git
+Cloning into 'T7-reprograma-CV'...
+remote: Enumerating objects: 36, done.
+remote: Counting objects: 100% (36/36), done.
+remote: Compressing objects: 100% (31/31), done.
+remote: Total 36 (delta 1), reused 34 (delta 1), pack-reused 0
+Unpacking objects: 100% (36/36), done.
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv
+$ git config --global --list
+core.editor='C:\Users\Renomear.DESKTOP-BS0U13S\AppData\Local\Programs\Microsoft VS Code\Code.exe' --wait
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv
+$ $ git config --global
+bash: $: command not found
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv
+$ git config --global user.email lunanie@gmail.com
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv
+$ git config --global --list
+core.editor='C:\Users\Renomear.DESKTOP-BS0U13S\AppData\Local\Programs\Microsoft VS Code\Code.exe' --wait
+user.email=lunanie@gmail.com
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv
+$ cd T7-reprograma-CV/
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (master)
+$ git checkout -b "luciane-martins"
+Switched to a new branch 'luciane-martins'
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (luciane-martins)
+$ git remote -v
+origin  https://github.com/lunanie/T7-reprograma-CV.git (fetch)
+origin  https://github.com/lunanie/T7-reprograma-CV.git (push)
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (luciane-martins)
+$ git remote add upstream https://github.com/ladybuzz/T7-reprograma-CV.git
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (luciane-martins)
+$ git remote -v
+origin  https://github.com/lunanie/T7-reprograma-CV.git (fetch)
+origin  https://github.com/lunanie/T7-reprograma-CV.git (push)
+upstream        https://github.com/ladybuzz/T7-reprograma-CV.git (fetch)
+upstream        https://github.com/ladybuzz/T7-reprograma-CV.git (push)
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (luciane-martins)
+$ code .
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (luciane-martins)
+$ git status
+On branch luciane-martins
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+        deleted:    students/seu_nome16/cv_template.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        students/luciane_martins/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (luciane-martins)
+$ git add .
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (luciane-martins)
+$ git commit -m'commit inicial com adição de nome'
+[luciane-martins 9863c09] commit inicial com adição de nome
+ 2 files changed, 8 insertions(+), 7 deletions(-)
+ rename students/{seu_nome16/cv_template.html => luciane_martins/luciane_martins.html} (97%)
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (luciane-martins)
+$ git push origin luciane-martins
+Username for 'https://github.com': lunanie
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 2.31 KiB | 1.16 MiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'luciane-martins' on GitHub by visiting:
+remote:      https://github.com/lunanie/T7-reprograma-CV/pull/new/luciane-martins
+remote:
+To https://github.com/lunanie/T7-reprograma-CV.git
+ * [new branch]      luciane-martins -> luciane-martins
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (luciane-martins)
+$ git add .
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (luciane-martins)
+$ git commit -m'atualizações'
+[luciane-martins d8f8a2d] atualizações
+ 1 file changed, 420 insertions(+), 306 deletions(-)
+ rewrite students/luciane_martins/luciane_martins.html (95%)
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (luciane-martins)
+$ git push origin luciane-martins
+Username for 'https://github.com': lunanie
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.41 KiB | 362.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/lunanie/T7-reprograma-CV.git
+   9863c09..d8f8a2d  luciane-martins -> luciane-martins
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (luciane-martins)
+$ git config --global --unset-all user.email lunanie@gmail.com
+
+EH326@EH326 MINGW64 ~/documents/lunanie/cv/T7-reprograma-CV (luciane-martins)
+$
