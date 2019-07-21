@@ -13,8 +13,8 @@ class LoginPage extends Component {
   }
   fazerLogin = e => {
     e.preventDefault();
-    console.log(this.inputLogin.value);
-    console.log(this.inputSenha.value);
+    // console.log(this.inputLogin.value);
+    // console.log(this.inputSenha.value);
     const dadosDeLogin = {
       login: this.inputLogin.value,
       senha: this.inputSenha.value
@@ -34,10 +34,10 @@ class LoginPage extends Component {
       .then(respJson => {
         // peguei o retorno no back e consigo usar como variável
         // se a resposta for 200 ok
-        console.log("then ok", respJson);
+        // console.log("then ok", respJson);
         localStorage.setItem("TOKEN", respJson.token);
         // coloquei nome do login
-        // localStorage.setItem("NOMEDOLOGIN", respJson.usuario.login);
+        localStorage.setItem("NOMEDOLOGIN", dadosDeLogin.login);
         this.props.history.push("/");
       })
       .catch(err => {

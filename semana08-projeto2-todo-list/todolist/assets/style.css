@@ -1,0 +1,158 @@
+body{
+    background: linear-gradient(to bottom,#80bffd, #c2e0fd);
+    /* background-image: linear-gradient(to top, red, yellow); */
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #444444;
+    height: 100vh;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content {
+    background-color:#fff;
+
+}
+
+.title{
+    border-bottom:1px solid #e0c3fc;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.task__add{
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.btn__add{
+    border: none;
+    background-color: #ba7af8 ;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    padding: 25px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+ul li{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: #444444;
+   
+
+}
+
+.close {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+.list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.list li{
+    border-bottom:1px solid #e0c3fc;
+    padding: 10px 20px;
+
+
+}
+
+.btn__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    
+}
+
+.btn__complete{
+    margin-right: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ba7af8;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.btn__markoff{
+    margin-right: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ba7af8;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: none;
+    cursor: pointer;
+
+}
+
+.btn__delete{
+    margin-left: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ba7af8;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+ul{
+    cursor: grab;
+}
+
+ul:active{
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+@media (max-width: 768px) {
+    body {
+        background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    }
+    .container{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+  }
+
+@media (max-width: 420px) {
+    body {
+        background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    }
+    .container{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+  }
