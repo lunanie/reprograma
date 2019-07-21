@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+/* PREVISAO DO TEMPO */
+
+.previsao-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 560px;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+.previsao {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  padding: 25px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.previsao__data {
+  margin: 0;
+}
+
+.previsao__resumo {
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.previsao__img {
+  max-height: 105px;
+  width: auto;
+}
+
+.previsao-temperatura {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.previsao-temperatura__linha td,
+.previsao-temperatura__linha th {
+  padding-top: 15px;
+  font-size: 18px;
+}
